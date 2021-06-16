@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>在线投票系统</title>
+<link type="image/x-icon" href="images/yc.png" rel="shortcut icon"/>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+ 
+<div id="header" class="wrap">
+	<img src="images/logo.gif" />
+</div>
+<div id="navbar" class="wrap">
+	<div class="profile">
+		您好，a
+		<span class="return"><a href="view.html">返回列表</a></span>
+		<span class="addnew"><a href="add.html">添加新投票</a></span>
+		<span class="modify"><a href="manage.html">维护</a></span>
+		
+	</div>
+	<div class="search">
+		<form method="post" action="#">
+			<input type="text" name="keywords" class="input-text" value=""/><input type="submit" name="submit" class="input-button" value="" />
+		</form>
+	</div>
+</div>
+
+<div id="vote" class="wrap">
+	<h2>参与投票</h2>
+	<ul class="list">
+		<li>
+			<h4>放松放松地方</h4>
+			<p class="info">共有 5 个选项，已有 0 个网友参与了投票。</p>
+			<form method="post" action="">
+			    <input type="hidden" name="entityId" value="103"/> 
+				<ol>
+				   
+					<li><input type="checkbox" name="options"  value="380"/>费大幅</li>
+				   
+					<li><input type="checkbox" name="options"  value="381"/>奋斗</li>
+				   
+					<li><input type="checkbox" name="options"  value="382"/>辅导费</li>
+				   
+					<li><input type="checkbox" name="options"  value="383"/>好</li>
+				   
+					<li><input type="checkbox" name="options"  value="384"/>火锅</li>
+				  	
+				</ol>
+				<p class="voteView"><input type="image" src="images/button_vote.gif" /><a href="Vote!view.action?entityId=103"><img src="images/button_view.gif" /></a></p>
+			</form>
+		</li>
+	</ul>
+</div>
+<div id="footer" class="wrap">
+	源辰信息 &copy; 版权所有
+</div>
+</body>
+</html>
